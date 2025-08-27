@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Share Awareness</title>
+  <link rel="stylesheet" href="share.css">
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="what.html">What is Bullying?</a>
+    <a href="protect.html">Protect Yourself</a>
+    <a href="report.html">Report</a>
+    <a href="share.html" class="active">Share</a>
+    <a href="login.html" >Login</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+
+  <header>
+    <h1>Share Awareness</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        Together, we can stop bullying, harassment, and violence. Share this campaign with friends, family, 
+        and your community to spread awareness and help create a safer world for every child.
+      </p>
+
+      <button onclick="shareNow()">📢 Share This</button>
+      <div id="shareMessage"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Child Safety Campaign</p>
+    <p>Learn more at <a href="https://www.unicef.org/egypt/child-protection" target="_blank">UNICEF Egypt</a> |📞 Call 1600</p>
+    <p style="font-size:14px; color:#ccc;">Designed by Fouad Sami</p>
+  </footer>
+
+  <script>
+    function shareNow() {
+      const msg = document.getElementById("shareMessage");
+      msg.innerHTML = "<div class='message'>✅ Thank you for sharing awareness!</div>";
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Report Bullying</title>
+  <link rel="stylesheet" href="report.css">
+
+</head>
+
+<body>
+  
+
+    <nav>
+    <a href="index.html">Home</a>
+    <a href="what.html">What is Bullying?</a>
+    <a href="protect.html">Protect Yourself</a>
+    <a href="report.html" class="active">Report</a>
+    <a href="share.html">Share</a>
+    <a href="login.html" >Login</a>
+    <a href="signup.html">Sign Up</a>
+  </nav>
+
+  <header>
+    <h1>Report Bullying and Violence</h1>
+  </header>
+
+  <main>
+    <section>
+      <p>
+        If you or someone you know is experiencing bullying, harassment, or violence, it is important to report it. 
+        Reporting helps protect you and others, and ensures that proper action is taken. 
+        Use this form to raise your voice:<br>
+        <p class="helpline-number">📞 Call 16000</p>
+        
+      </p>
+
+      <form onsubmit="showMessage(event)">
+        <label>Your Name:</label><br>
+  <style>      /* From Uiverse.io by adamgiebl */ 
+.input-wrapper input {
+  background-color: #eee;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 13em;
+  border-radius: 1rem;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+.input-wrapper input:focus {
+  outline-color: rgb(0, 0, 0);
+}
+</style>
+
+<div class="input-wrapper">
+  <input type="text" placeholder="Type here..." name="text" class="input">
+</div>
+<br>
+        <label>What happened?</label><br>
+        <div class="input-wrapper">
+  <input type="text" placeholder="Type here..." name="text" class="input">
+</div>
+<br>
+        <button type="submit">Submit Report</button>
+      </form>
+
+      <div id="messageBox"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Child Safety Campaign</p>
+    <p>Learn more at <a href="https://www.unicef.org/egypt/child-protection" target="_blank">UNICEF Egypt</a> |📞 Call 1600</p>
+    <p style="font-size:14px; color:#ccc;">Designed by Fouad Sami</p>
+  </footer>
+
+  <script>
+    function showMessage(e) {
+      e.preventDefault();
+      const box = document.getElementById("messageBox");
+      const msg = document.createElement("div");
+      msg.classList.add("message");
+      msg.innerText = "✅ Thank you! Your report has been submitted.";
+      box.appendChild(msg);
+    }
+  </script>
+</body>
+</html>
